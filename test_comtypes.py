@@ -19,20 +19,21 @@ AttachToInstance = False
 # set the following flag to True to manually specify the path to SAP2000.exe
 # this allows for a connection to a version of SAP2000 other than the latest installation
 # otherwise the latest installed version of SAP2000 will be launched
-SpecifyPath = True
+SpecifyPath = False
 
 # if the above flag is set to True, specify the path to SAP2000 below
 ProgramPath = 'c:\\Program Files\\SAP2000 19\\SAP2000.exe'
 
 # full path to the model
 # set it to the desired path of your model
-APIPath = 'c:\\Users\\yqin78\\Proj.Python\\PySAP\\SAP2K Models\\Test'
+# APIPath = 'c:\\Users\\yqin78\\Proj.Python\\PySAP\\SAP2K Models\\Test'
+APIPath = 'c:\\Users\\yqin78\\Proj.Python\\PySAP\\SAP2K Models\\MARC model'
 if not os.path.exists(APIPath):
     try:
         os.makedirs(APIPath)
     except OSError:
         pass
-ModelPath = APIPath + os.sep + 'aaa.sdb'
+ModelPath = APIPath + os.sep + 'MARC.sdb'
 
 if AttachToInstance:
     # attach to a running instance of SAP2000
@@ -177,7 +178,7 @@ for i in range(0, 7):
     R1 = []
     R2 = []
     R3 = []
-    ObjectElm = 0;
+    ObjectElm = 0
     ret = SapModel.Results.Setup.DeselectAllCasesAndCombosForOutput()
     ret = SapModel.Results.Setup.SetCaseSelectedForOutput(str(i + 1))
     if i <= 3:
