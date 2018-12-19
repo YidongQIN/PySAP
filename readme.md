@@ -24,3 +24,4 @@ new branch in GT
 and then, back to `master` branch
 
 how to compare the difference of working space and repository committed
+
