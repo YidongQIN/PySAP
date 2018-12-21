@@ -25,3 +25,5 @@ and then, back to `master` branch
 
 how to compare the difference of working space and repository committed
 
+# Git at new laptop
+if the git on my carbon 6th works.
