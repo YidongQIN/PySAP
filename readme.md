@@ -27,3 +27,6 @@ how to compare the difference of working space and repository committed
 
 # Git at new laptop
 if the git on my carbon 6th works.
+
+use the command to change http to ssh
+`git remote set-url [branch] [git.addr]`
